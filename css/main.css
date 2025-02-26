@@ -1,0 +1,17 @@
+body {  /* Etiqueta contenedora padre */
+    margin: 0;
+    padding: 0;
+    position: fixed; /* Fija el contenido sin "Scroll" */
+
+    /* Probar estas configuraciones - No creo que sirvan */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* 
+This is a CSS comment. 
+CSS comments are used to explain the code and are ignored by the browser. 
+They can span multiple lines.
+*/

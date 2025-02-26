@@ -7,11 +7,5 @@ body {  /* Etiqueta contenedora padre */
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 1;
 }
-
-/* 
-This is a CSS comment. 
-CSS comments are used to explain the code and are ignored by the browser. 
-They can span multiple lines.
-*/

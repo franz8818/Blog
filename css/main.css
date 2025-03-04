@@ -1,16 +1,17 @@
-body{  /* Etiqueta contenedora padre */
+body {
+    /* Etiqueta contenedora padre */
     margin: 0;
     padding: 0;
-    position: fixed; /* Fija el contenido sin "Scroll" */
 
-    /* Probar estas configuraciones - No creo que sirvan */
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+    background-color: #f5f5fa;
 }
 
-a{
+
+
+a {
     text-decoration: none;
     /* Quita las lineas de "link" */
     display: inline;
@@ -18,26 +19,28 @@ a{
     color: black;
 }
 
-header{
+/* HEADER */
+
+header {
     width: 100%;
-    height: 140px;
+    height: 100px;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
-header .header-icons-container{
-width: 100%;
-height: 50px;
-/* "header" padre tiene 140px -> Dividir en dos contenedores */
-display: grid;
-background-color: #47cfac;
+header .header-icons-container {
+    width: 100%;
+    height: 35px;
+    /* "header" padre tiene 140px -> Dividir en dos contenedores */
+    display: grid;
+    background-color: black;
 }
 
-header .header-icons-container .icons{
+header .header-icons-container .icons {
     width: 300px;
     height: auto;
     /* Tan grande como su padre -> El contenedor de la sección */
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,35 +48,143 @@ header .header-icons-container .icons{
     margin-right: 50px;
 }
 
-header .icons span{
-    color: white;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: white;
+    padding: 0 20px; /* Añade un poco de padding para separar los elementos de los bordes */
 }
 
-nav{
-    display: grid;
-    /* Ayuda a seccionar los dos contenedores internos */
-    grid-template-columns: 1fr 1fr;
-    height: 90px;
-}
-
-nav .nav-logo-container{
-    margin-left: 50px;
-}
-
-nav .nav-logo-container img{
+nav .nav-logo img {
     width: 220px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
-nav .profile-link{
+nav .profile-link {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* Elemento queda todo al 100% del lado derecho */
-    margin-right: 50px;
 }
 
-nav .profile-link a{
+.profile-link .icon-cv {
+    width: 38px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 38px;
+    /* Ajusta el tamaño según sea necesario */
+    margin-right: 30px;
+    /* Espacio entre el texto y el ícono */
+    margin-top: 4px;
+    margin-left: 15px;
+}
+
+/* HERO */
+
+.hero {
+    padding: 50px;
+}
+
+.hero img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.hero p {
+    color: #555;
+}
+
+/* FEATURES */
+
+.astro-themes {
+    background: black;
+    color: white;
+    padding: 50px 20px;
+}
+
+.astro-themes h2 {
+    font-size: 2em;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.feature {
+    width: 200px;
+    text-align: center;
+}
+
+.feature h3 {
+    font-weight: bold;
+}
+
+/* CARDS */
+
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 250px;
+    text-align: left;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tag {
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+
+.contact {
+    background: black;
+    color: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact button {
+    background: white;
     color: black;
-    border-bottom: 1px solid black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
 }

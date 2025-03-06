@@ -84,11 +84,18 @@ nav .profile-link {
 
 .hero {
     padding: 50px;
+    text-align: center;
 }
 
 .hero img {
-    width: 100px;
-    border-radius: 50%;
+    width: 100%;
+    max-width: 600px; /* Ajusta el tamaño máximo según sea necesario */
+    height: auto;
+    border-radius: 10px; /* Añade bordes redondeados si lo deseas */
+}
+
+.contact-right {
+    margin-top: 20px;
 }
 
 .hero h1 {

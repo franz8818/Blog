@@ -82,12 +82,12 @@ nav .profile-link {
 
 /* HERO */
 
-.hero {
+.grid-container {
     padding: 50px;
     text-align: center;
 }
 
-.hero img {
+.grid-container img {
     width: 100%;
     max-width: 600px; /* Ajusta el tamaño máximo según sea necesario */
     height: auto;

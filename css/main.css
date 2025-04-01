@@ -80,118 +80,28 @@ nav .profile-link {
     margin-left: 15px;
 }
 
-/* HERO */
+/* HOME */
 
-.grid-container {
-    padding: 50px;
-    text-align: center;
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    /* tres columnas */
+    height: 100%;
+    /* Pantalla completa */
 }
 
-.grid-container img {
-    width: 100%;
-    max-width: 600px; /* Ajusta el tamaño máximo según sea necesario */
-    height: auto;
-    border-radius: 10px; /* Añade bordes redondeados si lo deseas */
+.home-main section{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
 }
 
-.contact-right {
-    margin-top: 20px;
-}
-
-.hero h1 {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.hero p {
-    color: #555;
-}
-
-/* FEATURES */
-
-.astro-themes {
-    background: black;
-    color: white;
-    padding: 50px 20px;
-}
-
-.astro-themes h2 {
-    font-size: 2em;
-}
-
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.feature {
-    width: 200px;
-    text-align: center;
-}
-
-.feature h3 {
-    font-weight: bold;
-}
-
-/* CARDS */
-
-
-.cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    border: 2px solid black;
-    width: 250px;
-    text-align: left;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.tag {
-    background: black;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 12px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-/* CONTACT */
-
-.contact {
-    background: black;
-    color: white;
-    padding: 30px;
-    margin-top: 30px;
-    border-radius: 10px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contact input {
-    width: 80%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
-.contact button {
-    background: white;
+.home-main-text{
+    font-size: 30px;
+    font-weight: 700px;
+    letter-spacing: 12px;
     color: black;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 10px;
 }
+

@@ -88,6 +88,11 @@ nav .profile-link {
     /* tres columnas */
     height: 100%;
     /* Pantalla completa */
+    background-image: url("../assets/img/Cover.png");
+    background-position: center;
+    /* Para que la imagen no se mueva y quede en el centro */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home-main section{
